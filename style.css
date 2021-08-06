@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,7 +8,30 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.navbar{
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #41B883;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(32, 32, 32);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #34495E;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #243241;
+}
+
+.navbar {
     position: fixed;
     width: 100%;
     padding: 20px 0;
@@ -17,7 +40,7 @@
     /* box-shadow: -1px 5px 8px black; */
 }
 
-.navbar-scrolled{
+.navbar-scrolled {
     position: fixed;
     width: 100%;
     padding: 5px 0;
@@ -26,33 +49,33 @@
     transition: 0.5s ease-in-out;
 }
 
-.max-width{
+.max-width {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
 
-.navbar .max-width{
+.navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar .logo{
+.navbar .logo {
     font-size: 40px;
     font-weight: 600;
 }
 
-.navbar .logo::selection{
+.navbar .logo::selection {
     background: #34495E;
     color: #41B883;
 }
 
-.navbar .links li{
+.navbar .links li {
     display: inline-block;
 }
 
-.navbar .links li a{
+.navbar .links li a {
     color: whitesmoke;
     font-size: 18px;
     font-weight: 500;
@@ -60,12 +83,12 @@
     transition: 0.2s;
 }
 
-.navbar .links li a:hover{
+.navbar .links li a:hover {
     color: #41B883;
     transition: 0.2s;
 }
 
-.home{
+.home {
     display: flex;
     background: url(asset/bg1.png) no-repeat center;
     height: 100vh;
@@ -74,27 +97,45 @@
     min-height: 500px;
 }
 
-.home .max-width{
+.home .max-width {
     margin: auto 0 auto 40px;
 }
 
-.home .content .text1{
+.home .content .text1 {
     font-size: 25px;
 }
 
-.home .content .text2{
+.home .content .text2 {
     font-size: 70px;
     font-weight: 600;
     margin-left: -3px;
 }
 
-.home .content .text3{
+.home .content .text3 {
     font-size: 40px;
     margin: 5px 0;
 }
 
-.home .content .text3 span{
+.home .content .text3 span {
     color: #34495E;
     font-weight: 500;
 
+}
+
+/* media quires */
+
+@media (max-width:991px){
+    .max-width {
+        padding: 0 50px;
+    }
+
+
+}
+
+@media (max-width:715px){
+    .max-width{
+        max-width: 0 20px;
+    }
+
+    
 }
