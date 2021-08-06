@@ -12,8 +12,18 @@
     position: fixed;
     width: 100%;
     padding: 20px 0;
+    transition: 0.5s ease-in-out;
     /* background: #41B883; */
     /* box-shadow: -1px 5px 8px black; */
+}
+
+.navbar-scrolled{
+    position: fixed;
+    width: 100%;
+    padding: 5px 0;
+    background: #41B883;
+    box-shadow: -1px 5px 8px black;
+    transition: 0.5s ease-in-out;
 }
 
 .max-width{
@@ -47,6 +57,12 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: 0.2s;
+}
+
+.navbar .links li a:hover{
+    color: #41B883;
+    transition: 0.2s;
 }
 
 .home{
