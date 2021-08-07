@@ -100,7 +100,6 @@
 .home .max-width {
     margin: auto 0 auto 40px;
 }
-
 .home .content .text1 {
     font-size: 25px;
 }
@@ -117,14 +116,41 @@
 }
 
 .home .content .text3 span {
-    color: #34495E;
+    color: #696969;
     font-weight: 500;
+    text-decoration: none;
+    transform: skewX(0.001deg); /*evita o "efeito de pulo"*/
+    transition: transform .3s ease-in-out;
+    display: inline-block;
+}
 
+.home .content .text3 span a{
+    color: rgb(92, 92, 92);
+    transform: skewX(0.001deg); /*evita o "efeito de pulo"*/
+    transition: transform .3s ease-in-out;
+}
+
+.home .content .text3 span::after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: black;
+    transition: 300ms;
+}
+
+.home .content .text3 span a:hover{
+    color: rgba(59, 58, 58, 0.541);
+}
+
+.home .content .text3 span:hover::after {
+    width: 95%;
+    
 }
 
 /* media quires */
 
-@media (max-width:991px){
+@media (max-width:991px) {
     .max-width {
         padding: 0 50px;
     }
@@ -132,10 +158,83 @@
 
 }
 
-@media (max-width:715px){
-    .max-width{
+@media (max-width:715px) {
+    .max-width {
         max-width: 0 20px;
     }
 
-    
+
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blog-content{
+    text-align: center;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+  }
+
+  .header p{
+      font-size: 15px;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
