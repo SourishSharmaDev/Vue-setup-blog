@@ -11,7 +11,7 @@
 <br />
 <p align="center">
   <a href="https://sourishsharmadev.github.io/Vue-setup-blog/">
-    <img src="asset/logo.png" alt="Logo" width="100" height="100">
+    <img src="asset/logo.png" alt="Logo" width="120" height="100">
   </a>
 
   <h3 align="center">Modern Blog Templete</h3>
