@@ -6,18 +6,12 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
-!-- PROJECT LOGO -->
+<!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://sourishsharmadev.github.io/Vue-setup-blog/">
-    <img src="asset/logo.png" alt="Logo" width="80" height="80">
+    <img src="asset/logo.png" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Modern Blog Templete</h3>
